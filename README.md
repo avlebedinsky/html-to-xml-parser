@@ -1,11 +1,12 @@
 # HTML to XML Parser
 
-This project provides a simple parser that converts HTML documents into well-formed XML. It utilizes the BeautifulSoup library for parsing HTML and lxml for generating XML.
+A Python tool for converting HTML files to XML format with specific tag extraction.
 
 ## Features
-
-- Parses HTML content and converts it to XML format.
-- Handles various HTML structures and ensures valid XML output.
+- Extracts paragraphs containing annotation tags
+- Supports different encodings
+- Pretty print XML output
+- Auto-generated output filenames
 
 ## Installation
 
@@ -18,14 +19,9 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-
-To run the parser, execute the following command:
-
 ```bash
-python src/main.py
+python src/main.py <html_file> [output_file]
 ```
-
-You will be prompted to enter the HTML content you wish to convert to XML.
 
 ## Running Tests
 
